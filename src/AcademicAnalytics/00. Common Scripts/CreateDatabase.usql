@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-DECLARE @dataVersion string = "mag-##DatasetVersion##";
-DECLARE @blobAccount string = "##YourBlobAccount##";
+DECLARE @dataVersion string = "mag-2019-01-01"; //##DatasetVersion##";
+DECLARE @blobAccount string = "magasunife";
 DECLARE @uriPrefix   string = "wasb://" + @dataVersion + "@" + @blobAccount + "/";
 
 DROP DATABASE IF EXISTS AcdemicGraph; 
