@@ -1,0 +1,20 @@
+﻿USE DATABASE AcdemicGraph;
+
+
+CREATE TABLE CSIssn(
+      INDEX clx_CSIssn CLUSTERED(Issn ASC) 
+      DISTRIBUTED BY HASH (Issn)
+)
+ AS EXTRACT  
+    Issn string
+  FROM "CSissn.txt"
+  USING Extractors.Tsv(silent: false, quoting: false);
+
+CREATE TABLE AIIssn(
+      INDEX clx_AIIssn CLUSTERED(Issn ASC) 
+      DISTRIBUTED BY HASH (Issn)
+)
+ AS EXTRACT  
+    Issn string
+  FROM "AIissn.txt"
+  USING Extractors.Tsv(silent: false, quoting: false);

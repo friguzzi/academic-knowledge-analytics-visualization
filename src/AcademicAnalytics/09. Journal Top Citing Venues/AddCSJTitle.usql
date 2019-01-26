@@ -1,0 +1,11 @@
+﻿USE DATABASE AcdemicGraph;
+
+
+CREATE TABLE CSJTitle(
+      INDEX clx_CSJTitle CLUSTERED(Title ASC) 
+      DISTRIBUTED BY HASH (Title)
+)
+ AS EXTRACT  
+    Title string
+  FROM "CSJournalsTitles.csv"
+  USING Extractors.Tsv(silent: false, quoting: false);
