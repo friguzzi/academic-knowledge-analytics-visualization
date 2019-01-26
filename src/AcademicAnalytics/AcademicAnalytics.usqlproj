@@ -32,14 +32,42 @@
     <Script Include="07. Conference Memory of References\AggregateConferenceReferencesByYear.usql" />
     <Script Include="08. Conference Top Referenced Venues\AggregateConferenceReferencesByYearAndVenue.usql" />
     <Script Include="09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql" />
-    <Script Include="09. Journal Top Citing Venues\AggregateFosEntityCount.usql" />
-    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenue.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueESwA.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueFGCS.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueIA.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueIEEEAccess.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJAIR.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJCS.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJMLR.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueKI.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMLJ.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMTA.usql" />
+    <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueTPLP.usql" />
+    <Script Include="09. Journal Top Citing Venues\JournalSelfCitations.usql" />
+    <Script Include="09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql" />
     <Script Include="10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql" />
     <Script Include="11. Field of Study Entity Counts\AggregateFosEntityCount.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountML2.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCLP23.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCP12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCP2.usql" />
     <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV2.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountILP23.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountILP3.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic2.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP2.usql" />
     <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS.usql" />
-    <Script Include="11. Field of Study Top Citing Fields\AggregateJournalCitationsByYearAndVenue.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS2.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountML12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountPL12.usql" />
+    <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountSAI23.usql" />
     <Script Include="12. Organization Insight\GenerateSubgraphForAffiliation.usql" />
     <Script Include="13. Field of Study Top Entities\FieldTopEntitites.usql" />
     <ScriptCode Include="00. Common Scripts\CreateDatabase.usql.cs">
@@ -72,14 +100,41 @@
     <ScriptCode Include="09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql.cs">
       <DependentUpon>09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="09. Journal Top Citing Venues\AggregateFosEntityCount.usql.cs">
-      <DependentUpon>09. Journal Top Citing Venues\AggregateFosEntityCount.usql</DependentUpon>
-    </ScriptCode>
-    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenue.usql.cs">
-      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenue.usql</DependentUpon>
-    </ScriptCode>
     <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql.cs">
       <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueESwA.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueESwA.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueFGCS.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueFGCS.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueIA.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueIA.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJAIR.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJAIR.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJCS.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJCS.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJMLR.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueJMLR.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueKI.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueKI.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMLJ.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMLJ.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueTPLP.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueTPLP.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\JournalSelfCitations.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\JournalSelfCitations.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql.cs">
       <DependentUpon>10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql</DependentUpon>
@@ -87,14 +142,65 @@
     <ScriptCode Include="11. Field of Study Entity Counts\AggregateFosEntityCount.usql.cs">
       <DependentUpon>11. Field of Study Entity Counts\AggregateFosEntityCount.usql</DependentUpon>
     </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountML2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountML2.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCLP23.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCLP23.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCP12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCP12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCP2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCP2.usql</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV.usql.cs">
       <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCV.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCV12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountCV2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountCV2.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountILP23.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountILP23.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountILP3.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountILP3.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountLogic2.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountLP.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountLP12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountLP2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountLP2.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS.usql.cs">
       <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateJournalCitationsByYearAndVenue.usql.cs">
-      <DependentUpon>11. Field of Study Top Citing Fields\AggregateJournalCitationsByYearAndVenue.usql</DependentUpon>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS2.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountMAS2.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountML12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountML12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountPL12.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountPL12.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountSAI23.usql.cs">
+      <DependentUpon>11. Field of Study Top Citing Fields\AggregateFosEntityCountSAI23.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="12. Organization Insight\GenerateSubgraphForAffiliation.usql.cs">
       <DependentUpon>12. Organization Insight\GenerateSubgraphForAffiliation.usql</DependentUpon>
@@ -204,9 +310,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="09. Conference Top Citing Venues\README.md">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="09. Journal Top Citing Venues\ConferenceIncomingCitations.pbit">
       <SubType>Content</SubType>
     </Content>
     <Content Include="10. Conference Trending Topics\README.md">
