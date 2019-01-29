@@ -32,6 +32,9 @@
     <Script Include="07. Conference Memory of References\AggregateConferenceReferencesByYear.usql" />
     <Script Include="08. Conference Top Referenced Venues\AggregateConferenceReferencesByYearAndVenue.usql" />
     <Script Include="09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql" />
+    <Script Include="09. Journal Top Citing Venues\AddCSJTitle.usql" />
+    <Script Include="09. Journal Top Citing Venues\AddCSJTitleLower.usql" />
+    <Script Include="09. Journal Top Citing Venues\AddISSN.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueESwA.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueFGCS.usql" />
@@ -44,8 +47,13 @@
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMLJ.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueMTA.usql" />
     <Script Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueTPLP.usql" />
+    <Script Include="09. Journal Top Citing Venues\CreateCSJournals.usql" />
+    <Script Include="09. Journal Top Citing Venues\CreateCSpapers.usql" />
     <Script Include="09. Journal Top Citing Venues\JournalSelfCitations.usql" />
     <Script Include="09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql" />
+    <Script Include="09. Journal Top Citing Venues\SaveCSJournals.usql" />
+    <Script Include="09. Journal Top Citing Venues\SaveCSJournalTitles.usql" />
+    <Script Include="09. Journal Top Citing Venues\SaveCSJTitleLower.usql" />
     <Script Include="10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql" />
     <Script Include="11. Field of Study Entity Counts\AggregateFosEntityCount.usql" />
     <Script Include="11. Field of Study Top Citing Fields\AggregateFosEntityCountML2.usql" />
@@ -100,6 +108,9 @@
     <ScriptCode Include="09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql.cs">
       <DependentUpon>09. Conference Top Citing Venues\AggregateConferenceCitationsByYearAndVenue.usql</DependentUpon>
     </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\AddCSJTitleLower.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\AddCSJTitleLower.usql</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql.cs">
       <DependentUpon>09. Journal Top Citing Venues\AggregateJournalCitationsByYearAndVenueAI.usql</DependentUpon>
     </ScriptCode>
@@ -135,6 +146,15 @@
     </ScriptCode>
     <ScriptCode Include="09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql.cs">
       <DependentUpon>09. Journal Top Citing Venues\JournalSelfCitationsJoin.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\SaveCSJournals.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\SaveCSJournals.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\SaveCSJournalTitles.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\SaveCSJournalTitles.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="09. Journal Top Citing Venues\SaveCSJTitleLower.usql.cs">
+      <DependentUpon>09. Journal Top Citing Venues\SaveCSJTitleLower.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql.cs">
       <DependentUpon>10. Conference Trending Topics\ConferenceFieldsOfStudyByCitationGrowthRate.usql</DependentUpon>
