@@ -1,0 +1,21 @@
+﻿USE DATABASE AcdemicGraph;
+
+//DROP TABLE CSJournals2;
+
+CREATE TABLE CSJournals2
+(
+
+    INDEX clx_CSJournals2
+    CLUSTERED(JournalId ASC)
+
+    DISTRIBUTED BY
+    HASH(JournalId)
+
+)
+ AS
+SELECT *
+FROM Journals
+
+     LEFT SEMIJOIN
+         CSJTitle2
+     ON Journals.DisplayName == CSJTitle.Title;
