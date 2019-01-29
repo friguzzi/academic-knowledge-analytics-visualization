@@ -1,0 +1,5 @@
+﻿USE DATABASE AcdemicGraph;
+
+OUTPUT CSJournals
+TO "CSJournalsInMAG.tsv"
+USING Outputters.Tsv(outputHeader : true);

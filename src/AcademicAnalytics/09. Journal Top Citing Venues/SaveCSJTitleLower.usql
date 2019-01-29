@@ -1,0 +1,5 @@
+﻿USE DATABASE AcdemicGraph;
+
+OUTPUT CSTitleLower
+TO "CSTitleLower.tsv"
+USING Outputters.Tsv(outputHeader : true);

@@ -1,0 +1,14 @@
+﻿USE DATABASE AcdemicGraph;
+
+
+CREATE TABLE CSTitleLower
+(
+    INDEX clx_CSJTitle
+    CLUSTERED(Title ASC)
+
+    DISTRIBUTED BY
+    HASH(Title)
+)
+ AS
+SELECT CSJTitle.Title.ToLower() AS Title
+FROM CSJTitle;

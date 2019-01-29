@@ -1,0 +1,5 @@
+﻿USE DATABASE AcdemicGraph;
+
+OUTPUT CSJTitle
+TO "CSJournalsTitLoaded.tsv"
+USING Outputters.Tsv(outputHeader : true);

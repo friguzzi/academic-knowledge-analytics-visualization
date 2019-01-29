@@ -17,5 +17,5 @@ SELECT *
 FROM Journals
 
      LEFT SEMIJOIN
-         CSJTitle
-     ON Journals.DisplayName == CSJTitle.Title;
+         (SELECT CSJTitle.Title.ToLower() AS Title FROM CSJTitle) AS CSj
+     ON Journals.NormalizedName == CSj.Title;
