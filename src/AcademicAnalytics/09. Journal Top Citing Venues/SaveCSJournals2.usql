@@ -1,0 +1,5 @@
+﻿USE DATABASE AcdemicGraph;
+
+OUTPUT CSJournals2
+TO "CSJournals2.tsv"
+USING Outputters.Tsv(outputHeader : true);

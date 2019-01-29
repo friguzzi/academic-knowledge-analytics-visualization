@@ -1,6 +1,6 @@
 ﻿USE DATABASE AcdemicGraph;
 
-//DROP TABLE CSJournals2;
+DROP TABLE CSJournals2;
 
 CREATE TABLE CSJournals2
 (
@@ -18,4 +18,4 @@ FROM Journals
 
      LEFT SEMIJOIN
          CSJTitle2
-     ON Journals.DisplayName == CSJTitle.Title;
+     ON Journals.NormalizedName == CSJTitle2.Title;
